@@ -57,6 +57,6 @@ func InitDatabase() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	migrateDatabase()
 	DB = db
+	migrateDatabase()
 }

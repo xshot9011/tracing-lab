@@ -6,7 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/xshot9011/tracing-lab/models@develop"
+	"github.com/xshot9011/tracing-lab/models"
 )
 
 type CreateUserInput struct {
@@ -19,8 +19,8 @@ func AddUser(c *gin.Context) {
 	input.Name = c.PostForm("name")
 	input.Fibo, _ = strconv.Atoi(c.PostForm("fibo"))
 
-	user := models.Book{Name: input.Name, Fibo: input.Fibo}
-	models.User.Create(&user)
+	user := models.User{Name: input.Name, Fibo: input.Fibo}
+	models.DB.Create(&user)
 
 	c.JSON(http.StatusOK, gin.H{"Status": "200"})
 }

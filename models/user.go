@@ -11,6 +11,7 @@ type User struct {
 	Fibo int    `form:"fibo"`
 }
 
-func (u *User) BeforeCreate(tx *gorm.DB) {
+func (u *User) BeforeCreate(tx *gorm.DB) error {
 	u.ID = uuid.NewV4().String()
+	return nil
 }

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/xshot9011/tracing-lab/controllers@develop"
-	"github.com/xshot9011/tracing-lab/models@develop"
+	"github.com/xshot9011/tracing-lab/controllers"
+	"github.com/xshot9011/tracing-lab/models"
 
 	"github.com/gin-gonic/gin"
 )
