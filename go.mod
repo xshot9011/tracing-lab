@@ -1,4 +1,4 @@
-module connector
+module github.com/xshot9011/tracing-lab
 
 go 1.18
 

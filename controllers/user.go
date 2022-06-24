@@ -6,7 +6,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/xshot9011/tracing-lab/models"
+	"github.com/xshot9011/tracing-lab/models@develop"
 )
 
 type CreateUserInput struct {
