@@ -1,7 +1,7 @@
 FROM golang:1.18 as builder
 WORKDIR /app
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -a -o main .
+RUN CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -a -o main .
 
 FROM alpine:3.13
 WORKDIR /app
