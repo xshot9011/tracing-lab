@@ -12,7 +12,7 @@ var (
 	Log *logrus.Logger
 )
 
-func initLogConfiguration() {
+func InitLogConfiguration() {
 	log := logrus.New()
 	log.SetOutput(os.Stdout)
 
